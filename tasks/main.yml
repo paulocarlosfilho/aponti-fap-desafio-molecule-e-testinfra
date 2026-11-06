@@ -1,0 +1,12 @@
+---
+- name: Garantir que o pacote Nginx esta instalado no sistema
+  ansible.builtin.apt:
+    name: nginx
+    state: present
+    update_cache: yes
+
+- name: Garantir que o servico Nginx esta iniciado e habilitado no boot
+  ansible.builtin.service:
+    name: nginx
+    state: started
+    enabled: yes

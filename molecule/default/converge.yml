@@ -1,0 +1,7 @@
+---
+- name: Converge - Aplicar Role do Nginx
+  hosts: all
+  tasks:
+    - name: Incluir a role do servidor Nginx
+      ansible.builtin.include_role:
+        name: devsecops.servidor_nginx

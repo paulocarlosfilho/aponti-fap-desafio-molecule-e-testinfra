@@ -1,0 +1,14 @@
+galaxy_info:
+  author: devsecops_engineer
+  description: Role para automacao e provisionamento do servidor Nginx
+  company: Internal DevSecOps Lab
+  license: MIT
+  min_ansible_version: "2.10"
+  namespace: devsecops
+  role_name: servidor_nginx
+  platforms:
+    - name: Ubuntu
+      versions:
+        - jammy
+
+dependencies: []
